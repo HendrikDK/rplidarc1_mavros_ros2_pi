@@ -1,6 +1,6 @@
 # rplidarc1_mavros_ros2_pi
 
-This project integrates a Slamtec RPLIDAR C1 with MAVROS using ROS 2 Humble on a Raspberry Pi 4 running Ubuntu 22.04.3 LTS. It enables MAVLink `OBSTACLE_DISTANCE` messages to be published for use with ArduPilot-based obstacle avoidance.
+This project integrates a Slamtec RPLIDAR C1 with MAVROS using ROS 2 Humble on a Raspberry Pi 4 or 5 running Ubuntu 22.04.3 LTS. It enables MAVLink `OBSTACLE_DISTANCE` messages to be published for use with ArduPilot-based obstacle avoidance.
 
 ## ✅ Features
 
