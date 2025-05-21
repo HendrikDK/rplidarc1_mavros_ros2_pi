@@ -9,7 +9,6 @@ This project integrates a Slamtec RPLIDAR C1 with MAVROS using ROS 2 Humble on a
 - MAVROS integration via serial and UDP
 - Custom ROS 2 Python node for scan-to-MAVLink conversion
 - Auto-start option using systemd
-- GitHub-ready with SSH key authentication
 
 ## 📦 Packages
 
@@ -52,6 +51,7 @@ ros2 launch mavros node.launch \
     tgt_component:=1 \
     pluginlists_yaml:=${HOME}/rplidar_ws/src/mavros/mavros/launch/apm_pluginlists.yaml \
     config_yaml:=${HOME}/rplidar_ws/src/mavros/mavros/launch/apm_config.yaml
+
 🛠️ systemd Autostart
 Create a file called drone_service_stack.sh that launches all 3 components.
 
@@ -67,6 +67,7 @@ rplidar_ws/
 ├── install/
 ├── build/
 └── log/
+
 📡 Obstacle Avoidance
 To use the published /uas1/obstacle_distance in ArduPilot:
 
