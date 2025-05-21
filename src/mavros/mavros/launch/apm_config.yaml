@@ -1,0 +1,15 @@
+mavros:
+  ros__parameters:
+    conn_timeout: 30.0
+    system_id: 1
+    component_id: 1
+    target_system_id: 1
+    target_component_id: 1
+    start_timeout: 10.0
+    udp_timeout: 10.0
+    tcp_timeout: 10.0
+    serial_timeout: 10.0
+    fcu_protocol: "v2.0"
+    fcu_link:
+      baudrate: 115200
+    use_sim_time: false

@@ -1,0 +1,17 @@
+<launch>
+  <arg name="fcu_url" default="udp://:14540@127.0.0.1:14557"/>
+  <arg name="gcs_url" default=""/>
+  <arg name="tgt_system" default="1"/>
+  <arg name="tgt_component" default="1"/>
+  <arg name="pluginlists_yaml" default="$(find mavros)/launch/apm_pluginlists.yaml"/>
+  <arg name="config_yaml" default="$(find mavros)/launch/apm_config.yaml"/>
+
+  <include file="$(find mavros)/launch/namespace.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+    <arg name="gcs_url" value="$(arg gcs_url)"/>
+    <arg name="tgt_system" value="$(arg tgt_system)"/>
+    <arg name="tgt_component" value="$(arg tgt_component)"/>
+    <arg name="pluginlists_yaml" value="$(arg pluginlists_yaml)"/>
+    <arg name="config_yaml" value="$(arg config_yaml)"/>
+  </include>
+</launch>
